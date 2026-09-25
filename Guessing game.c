@@ -20,7 +20,10 @@ int main(){
     // printf("%d\n", a);  
 
     // 游戏开始提示
-    while (printf("按y开始:"), scanf("%c", &y), y != 'y'){
+    while (1){
+        printf("按y开始:");
+        if(scanf(" %c", &y) == 1 && y == 'y' && getchar() ==  '\n')
+            break;
         printf("输入错误\n");
         clear_input();                   // 清除输入缓冲区中的换行符
     }
