@@ -46,7 +46,6 @@ int main(){
             printf(a - b <= 3 ? "小了,快接近了\t" : "猜小了\t");
         else{
             printf("恭喜你，猜对了！\n");
-            printf("答案是：%d\n", a);
             break;
         }
         if (++c >= 5){
